@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    max-width: 650px;
+    display: grid;
+    grid-template-areas: 
+        "welcome welcome"
+        "pricing reason";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 1fr;
+}
+
+.container__welcome,
+.container__pricing,
+.container__reason {
+    padding: 40px;
+}
+
+.container__welcome {
+    grid-area: welcome;
+    background-color: white;
+}
+
+.container__welcome__title {
+    margin-bottom: 20px;
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container__welcome__sub-title {
+    margin-bottom: 15px;
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container__welcome__desc {
+    line-height: 1.5;
+    color: hsl(218, 22%, 67%);
+}
+
+.container__pricing {
+    grid-area: pricing;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.container__pricing__title {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container__pricing__content {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: hsl(218, 22%, 87%);
+}
+
+.container__pricing__content__price {
+    margin-right: 10px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container__pricing__feature {
+    color: white;
+}
+
+.container__pricing__cta {
+    margin-top: 30px;
+    width: 100%;
+    padding: 13px 30px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    border-radius: 5px;
+}
+
+.container__reason {
+    grid-area: reason;
+    background-color: hsl(179, 50%, 50%);
+}
+
+.container__reason__title {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container__reason__desc {
+    font-size: 14px;
+    line-height: 1.3;
+    color: hsl(204, 43%, 93%);
+}
+
+
