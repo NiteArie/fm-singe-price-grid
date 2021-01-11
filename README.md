@@ -1,5 +1,9 @@
 # fm-single-price-grid (Single Price Grid Component)
 
+## Live Preview
+
+Live URL: [https://nitearie.github.io/fm-single-price-grid/](https://nitearie.github.io/fm-single-price-grid/)
+
 ## Design Preview
 
 > Desktop
