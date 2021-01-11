@@ -98,6 +98,21 @@ body {
     background-color: hsl(71, 73%, 54%);
     border: 0;
     border-radius: 5px;
+    box-shadow: 0 3px 7px 1px hsla(0, 0%, 0%, .2);
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.container__pricing__cta:focus {
+    outline: none;
+}
+
+.container__pricing__cta:active {
+    transform: scale(0.97);
+}
+
+.container__pricing__cta:hover {
+    background-color: hsl(71, 71%, 70%);
 }
 
 .container__reason {
