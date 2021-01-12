@@ -16,7 +16,7 @@ body {
 .container {
     max-width: 650px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "welcome welcome"
         "pricing reason";
     grid-template-columns: repeat(2, 1fr);
